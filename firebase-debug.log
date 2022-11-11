@@ -1,0 +1,30 @@
+[debug] [2022-11-11T19:10:08.535Z] ----------------------------------------------------------------------
+[debug] [2022-11-11T19:10:08.537Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nayeem Haque\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-11T19:10:08.538Z] CLI Version:   11.15.0
+[debug] [2022-11-11T19:10:08.538Z] Platform:      win32
+[debug] [2022-11-11T19:10:08.538Z] Node Version:  v16.17.1
+[debug] [2022-11-11T19:10:08.539Z] Time:          Sat Nov 12 2022 01:10:08 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-11-11T19:10:08.539Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-11T19:10:08.621Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-11T19:10:08.621Z] > authorizing via signed-in user (nayeemhaque43@gmail.com)
+[debug] [2022-11-11T19:10:08.621Z] [iam] checking project assignment-11-20b1e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-11T19:10:08.624Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-20b1e:testIamPermissions [none]
+[debug] [2022-11-11T19:10:08.625Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-20b1e:testIamPermissions x-goog-quota-user=projects/assignment-11-20b1e
+[debug] [2022-11-11T19:10:08.625Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-20b1e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-11T19:10:09.225Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-20b1e:testIamPermissions 200
+[debug] [2022-11-11T19:10:09.225Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-20b1e:testIamPermissions {}
+[debug] [2022-11-11T19:10:09.225Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project assignment-11-20b1e:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-11-11T19:10:09.227Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-20b1e [none]
+[debug] [2022-11-11T19:10:09.961Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-20b1e 403
+[debug] [2022-11-11T19:10:09.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-20b1e {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-11-11T19:10:09.963Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-11-11T19:10:10.169Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Nayeem Haque\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Nayeem Haque\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project assignment-11-20b1e. Please make sure the project exists and your account has permission to access it.
