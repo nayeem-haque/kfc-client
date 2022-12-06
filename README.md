@@ -1,9 +1,9 @@
-# Petum
+# KFC
 
 ## Live Link - 
 
 ## Features and Functionalities
-- Cloud Kitchen PETUM.
+- Cloud Kitchen KFC.
 - Login & Registration using Google, Email & Password.
 - After logging in anyone can review items. 
 - User must login to check his/her reviews.
